@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho - HTML</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="page-container">
+        <header>
+            
+            <div id="inicio" class="logo-area">
+                <iframe src="https://giphy.com/embed/YfKGxrj0Wr6bqgRdNZ" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/stickers/crashbandicoot-transparent-YfKGxrj0Wr6bqgRdNZ"></a></p>
+                <img src="img/logo_html.png" alt="logo html">
+            </div>
+            <div class="course-title">
+                <h1>Aprenda HTML</h1>
+                <h2>Alunos</h2>
+                <h2>João Felipe, Kevin, Yuri, Bruno Felipe, Gabriel Freitas, John Elton</h2>
+            </div>
+        </header>
+
+        <nav>
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <div class="bar"></div>
+            </div>
+            <ul id="menu" class="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#oque">O que é?</a></li>
+                <li><a href="#vantagens">Vantagens</a></li>
+                <li><a href="#desvantagens">Desvantagens</a></li>
+                <li><a href="#curiosidades">Curiosidades</a></li>
+                <li><a href="#exemplos">Exemplos</a></li>
+                <li><a href="#conclusao">Conclusão</a></li>
+                <li><a href="#configuracoes" onclick="openConfig()">Tema</a></li>
+            </ul>
+        </nav>
+
+        <div id="configPanel" class="config-panel">
+            <span class="close-btn" onclick="closeConfig()">×</span>
+            <h2>Escolha o Tema</h2>
+            <button onclick="setTheme('default')">Padrão</button>
+            <button onclick="setTheme('light')">Branco</button>
+            <button onclick="setTheme('dark')">Escuro</button>
+        </div>
+
+        <main>
+            <div id="oque" class="tabs">
+                <div class="title-area">
+                    <div id="tab-title"><b>O que é HTML?</b></div>
+                    <div id="toggle-tab1" class="toggle-tab">                            
+                        <svg width="14px" height="9px" viewBox="0 0 14 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                                <g id="Tutorial_800" transform="translate(-392.000000, -1170.000000)" fill-rule="nonzero" stroke="#FFFFFF" stroke-width="2">
+                                    <g id="Group-2" transform="translate(320.000000, 1158.000000)">
+                                        <polyline id="Path-3" points="73 19.2603762 79.1481559 13 85 19.2603762"></polyline>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>                        
+                </div>
+                <div id="tab-content1" class="tab-content">
+                    <b>HTML em inglês significa HyperText Markup Language ou, em português, Linguagem de Marcação de Hipertexto.<br><br>
+
+                    Essa linguagem de marcação foi criada em 1990 pelo físico britânico Tim Berners-Lee, para auxiliar na formatação dos documentos de pesquisas compartilhados entre ele e seus colegas.<br><br>
+
+                    Com o desenvolvimento dos navegadores e a popularização da internet, o HTML passou a ser utilizado na criação de sites. Atualmente, a tecnologia evoluiu e é utilizada em conjunto com outras ferramentas, como o CSS e o JavaScript, no desenvolvimento de sites e aplicativos web dinâmicos.<br><br>
+                    
+                    Sua função é basicamente construir o esqueleto de uma página web através de elementos identificados e definidos, geralmente, por um par de marcadores conhecidos como tags. Esses elementos podem ser desde textos e suas formatações, como parágrafos, sublinhados e links, até conteúdos multimídia, como imagens e vídeos.<br><br>
+
+                    As tags descrevem a estrutura semântica de uma página, ou seja, a organização de suas informações, que então é recebida, interpretada e renderizada pelo navegador.<br><br>
+
+                    Os documentos HTML são arquivos de texto simples, com a extensão .html, e podem ser escritos na maioria dos editores de texto comuns, como o Bloco de Notas, do Windows ou até em ambientes de desenvolvimento integrado, como o Visual Studio Code.<br><br>
+
+                    A linguagem também é atualizada e publicada em versões, sendo atualmente mais usada a versão do HTML 5.</b>
+                    
+                </div>
+            </div>
+            <div id="vantagens" class="tabs">
+                <div class="title-area">
+                    <div id="tab-title"><b>Vantagens</b></div>
+                    <div id="toggle-tab2" class="toggle-tab">                            
+                        <svg width="14px" height="9px" viewBox="0 0 14 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                                <g id="Tutorial_800" transform="translate(-392.000000, -1170.000000)" fill-rule="nonzero" stroke="#FFFFFF" stroke-width="2">
+                                    <g id="Group-2" transform="translate(320.000000, 1158.000000)">
+                                        <polyline id="Path-3" points="73 19.2603762 79.1481559 13 85 19.2603762"></polyline>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>                        
+                </div>
+                <div id="tab-content2" class="tab-content">
+                    <img src="img/like.png" width="64" height="64" style="display: block; margin: 0 auto;"> <br>
+                    <b>O HTML (HyperText Markup Language) é a linguagem padrão para a criação de páginas web. Aqui estão algumas das principais vantagens do HTML:</b><br><br>
+
+                    <b>Simplicidade e Facilidade de Uso: <br>
+                        HTML é relativamente fácil de aprender e usar, especialmente para iniciantes. A sintaxe é simples e intuitiva, facilitando a criação de documentos estruturados.</b><br><br>
+                    
+                    <b>Compatibilidade Universal: <br>
+                        HTML é suportado por todos os navegadores web, garantindo que as páginas criadas possam ser visualizadas em qualquer dispositivo com um navegador.</b><br><br>
+                    
+                    <b>Gratuito e Acessível:</b><br>
+                        <b>HTML é uma linguagem aberta e gratuita, sem necessidade de licenciamento ou custos associados. <b><br><br>
+                    
+                    <b>Estruturação do Conteúdo:</b><br>
+                        <b>HTML permite a estruturação clara do conteúdo através de tags e elementos, o que ajuda na organização e apresentação da informação.</b><br><br>
+                    
+                    <b>Integração com Outras Tecnologias:</b><br>
+                        <br>HTML pode ser facilmente combinado com CSS para estilização e JavaScript para adicionar interatividade, criando páginas web dinâmicas e atraentes. </b><br><br>
+                    
+                    <b>SEO (Search Engine Optimization): <b><br>
+                        <b></b>Usar HTML corretamente pode melhorar a otimização para motores de busca (SEO), ajudando a aumentar a visibilidade do site nos resultados de busca.</b><br><br>
+                    
+                    <b>Acessibilidade:</b><br>
+                            <b>HTML, quando usado corretamente com práticas recomendadas de acessibilidade (como o uso de tags ARIA), pode tornar as páginas web mais acessíveis para pessoas com deficiências.</b><br><br>
+                    
+                    <b>Evolução Contínua:</b><br>
+                            <b>Com a introdução de HTML5, novas funcionalidades e elementos foram adicionados, como suporte a áudio e vídeo nativos, gráficos (canvas), armazenamento local e muito mais, expandindo as capacidades da linguagem. </b><br><br>
+                    
+                    <b>Flexibilidade:</b><br>
+                            <b>HTML pode ser utilizado para criar desde simples páginas estáticas até complexas aplicações web, adaptando-se a uma ampla gama de necessidades e projetos.</b><br><br>
+                    
+                    <b>Independência de Plataforma:</b><br>
+                        <b>Páginas HTML podem ser visualizadas em qualquer sistema operacional, seja Windows, Mac, Linux ou qualquer outro, desde que possua um navegador compatível.</b>
+                </div>
+            </div>
+            <div id="desvantagens" class="tabs">
+                <div class="title-area">
+                    <div id="tab-title">Desvantagens</div>
+                    <div id="toggle-tab3" class="toggle-tab">                            
+                        <svg width="14px" height="9px" viewBox="0 0 14 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                                <g id="Tutorial_800" transform="translate(-392.000000, -1170.000000)" fill-rule="nonzero" stroke="#FFFFFF" stroke-width="2">
+                                    <g id="Group-2" transform="translate(320.000000, 1158.000000)">
+                                        <polyline id="Path-3" points="73 19.2603762 79.1481559 13 85 19.2603762"></polyline>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>                        
+                </div>
+                <div id="tab-content3" class="tab-content">
+                    <img src="img/deslike.png" width="64" height="64" style="display: block; margin: 0 auto;"> <br>
+                    <b>É Estático:</b> <br>
+                    HTML sozinho não pode criar páginas interativas. Para isso, você precisa de linguagens como JavaScript. <br> <br>
+                    <b>Design Limitado:</b> <br> 
+                    Com HTML, é difícil fazer designs bonitos e complexos. Você geralmente precisa usar CSS para isso. <br> <br>
+                    <b>Problemas com Navegadores Diferentes:</b> <br>
+                    Nem todos os navegadores mostram o HTML exatamente da mesma maneira, o que pode causar problemas de visualização e alguns navegadores mais antigos por vezes não renderizam novas tags <br> <br>
+                    <b>Sem Lógica de Programação:</b> <br>
+                    HTML não pode fazer coisas como loops ou decisões, então dá para criar funcionalidades avançadas sem outras linguagens. <br> <br>
+                    <b>Segurança e Validação:</b> <br> 
+                    HTML por si só não consegue validar dados ou garantir segurança, então é preciso usar outras ferramentas para isso. <br> <br>
+                </div>
+            </div>
+
+            <div id="curiosidades" class="tabs">
+                <div class="title-area">
+                    <div id="tab-title">Curiosidades</div>
+                    <div id="toggle-tab4" class="toggle-tab">                            
+                        <svg width="14px" height="9px" viewBox="0 0 14 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                                <g id="Tutorial_800" transform="translate(-392.000000, -1170.000000)" fill-rule="nonzero" stroke="#FFFFFF" stroke-width="2">
+                                    <g id="Group-2" transform="translate(320.000000, 1158.000000)">
+                                        <polyline id="Path-3" points="73 19.2603762 79.1481559 13 85 19.2603762"></polyline>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>                        
+                </div>
+                <div id="tab-content4" class="tab-content">
+                    <b>O HTML foi criado em 1990 por Tim Berners-Lee enquanto trabalhava no CERN, o laboratório europeu de física de partículas.</b><br><br>
+
+                    <b>Ele criou o HTML para que os pesquisadores pudessem compartilhar e acessar suas pesquisas sem problemas, um feito que deu origem à World Wide Web (www).</b><br><br>
+
+                    <b>As primeiras versões do HTML permitiam somente 18 tags de linguagem. Com a evolução ao longo do tempo e das versões, o HTML5, que temos atualmente, conta com mais de 100 tags disponíveis para uso.</b><br><br>
+
+                    <b>Ferramentas de desenvolvimento: Existem diversas ferramentas e frameworks que simplificam e aceleram o desenvolvimento em HTML, como Bootstrap, Foundation, entre outros, oferecendo estilos predefinidos e componentes reutilizáveis.</b><br><br>
+                    <b>Impacto cultural: HTML teve um impacto cultural significativo ao permitir a criação de conteúdos digitais acessíveis a uma audiência global, facilitando o compartilhamento de informações, cultura e conhecimento de forma instantânea e global.</b>
+                </div>
+            </div>
+
+            <div id="exemplos" class="tabs">
+                <div class="title-area">
+                    <div id="tab-title">Exemplos</div>
+                    <div id="toggle-tab5" class="toggle-tab">                            
+                        <svg width="14px" height="9px" viewBox="0 0 14 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                                <g id="Tutorial_800" transform="translate(-392.000000, -1170.000000)" fill-rule="nonzero" stroke="#FFFFFF" stroke-width="2">
+                                    <g id="Group-2" transform="translate(320.000000, 1158.000000)">
+                                        <polyline id="Path-3" points="73 19.2603762 79.1481559 13 85 19.2603762"></polyline>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>                        
+                </div>
+                <div id="tab-content5" class="tab-content">
+                    <li><a href="basic.html" target="_blank">Estrutura Básica</a></li>
+                    <li><a href="header.html" target="_blank">Cabeçalhos e Parágrafos</a></li>
+                    <li><a href="listas.html" target="_blank">Listas Ordenadas e Não Ordenadas</a></li>
+                    <li><a href="links.html" target="_blank">Links e Imagens</a></li>
+                    <li><a href="forms.html" target="_blank">Formulários</a></li>
+                    <li><a href="tabelas.html" target="_blank">Tabelas</a></li>
+                </div>
+            </div>
+            
+            <div id="conclusao" class="tabs">
+                <div class="title-area">
+                    <div id="tab-title">Conclusão</div>
+                    <div id="toggle-tab6" class="toggle-tab">                            
+                        <svg width="14px" height="9px" viewBox="0 0 14 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                                <g id="Tutorial_800" transform="translate(-392.000000, -1170.000000)" fill-rule="nonzero" stroke="#FFFFFF" stroke-width="2">
+                                    <g id="Group-2" transform="translate(320.000000, 1158.000000)">
+                                        <polyline id="Path-3" points="73 19.2603762 79.1481559 13 85 19.2603762"></polyline>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>                        
+                </div>
+                <div id="tab-content6" class="tab-content">
+                    O HTML é a linguagem de marcação padrão para criar páginas da web e serve como base sobre a qual muitas outras tecnologias web são construídas. CSS (Cascading Style Sheets) é usado em conjunto com HTML para controlar a apresentação e o layout das páginas web, enquanto JavaScript adiciona interatividade e dinâmicas. Frameworks e bibliotecas modernas, como React, Angular e Vue.js, também dependem de HTML para funcionar, permitindo o desenvolvimento de aplicações web complexas e responsivas.<br><br>
+
+                    Além de ser base para outras tecnologias web, o HTML se integra bem com outras linguagens e plataformas, como XML e JSON para troca de dados, APIs para conectar serviços diversos, e linguagens de programação como PHP, Python e Ruby para desenvolvimento backend.<br><br>
+
+                    O HTML tambem é relativamente fácil de aprender e usar, tornando-se a porta de entrada para muitos que desejam entrar no campo do desenvolvimento web. Sua sintaxe simples e clara permite que iniciantes criem suas primeiras páginas rapidamente, enquanto profissionais experientes podem utilizá-lo para construir sites complexos e de alta performance.<br><br>
+
+                    Assim podemos concluir que o HTML é essencial para a web moderna, pois ele fornece a estrutura fundamental para todas as páginas web.<br><br>
+                </div>
+            </div>
+        </main>     
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
